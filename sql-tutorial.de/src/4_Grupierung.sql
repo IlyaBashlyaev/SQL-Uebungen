@@ -50,7 +50,7 @@ SELECT KonstrukteursWM, SUM(Team_Punkte) AS Team_Gesamtpunktzahl
 FROM WMTitel
 WHERE Saison BETWEEN 1990 AND 1999
 GROUP BY KonstrukteursWM
-HAVING SUM(Team_Punkte) >= 200;
+HAVING Team_Gesamtpunktzahl >= 200;
 
 /* 9. Ermittle für die Jahre, in denen Michael Schumacher Weltmeister wurde, die durchschnittliche Zahl der erreichten Team-Punkte des Konstrukteursweltmeisters und stelle die Liste geordnet dar. */
 SELECT Saison, AVG(Team_Punkte) AS Team_Durchschnittspunktzahl
